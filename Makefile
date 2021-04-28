@@ -20,3 +20,7 @@ build-engine:
 
 clone-engine:
 	docker exec -it flutter-build git clone -b dev/textures https://github.com/wechat-miniprogram/engine.git src/flutter
+
+copy-binaries:
+	mkdir -p $(CURRENT_DIR)/output
+	docker cp flutter-build:/src/src  $(CURRENT_DIR)/output
