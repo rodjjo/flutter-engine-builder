@@ -27,6 +27,7 @@ make start
 
 clone the flutter engine
 ```bash
+# edit the makefile to clone the repository and the branch you want
 make clone-engine
 ```
 
